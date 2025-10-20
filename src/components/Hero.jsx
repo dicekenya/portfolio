@@ -26,16 +26,16 @@ const Hero = () => {
 
       {/* Social icons */}
       <div className="flex space-x-6 mb-6 text-blue-600 dark:text-blue-400 text-2xl">
-        <a href="https://facebook.com/yourusername" target="_blank" rel="noreferrer">
+        <a href="https://www.facebook.com/yung.hunter.79" target="_blank" rel="noreferrer">
           <FaFacebook className="hover:scale-125 transition" />
         </a>
-        <a href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">
+        <a href="https://instagram.com/Lyrical_hunter" target="_blank" rel="noreferrer">
           <FaInstagram className="hover:scale-125 transition" />
         </a>
-        <a href="https://tiktok.com/@yourhandle" target="_blank" rel="noreferrer">
+        <a href="https://tiktok.com/@itsme_dice" target="_blank" rel="noreferrer">
           <FaTiktok className="hover:scale-125 transition" />
         </a>
-        <a href="tel:+254700000000" target="_blank" rel="noreferrer">
+        <a href="tel:+254707850704" target="_blank" rel="noreferrer">
           <FaPhoneAlt className="hover:scale-125 transition" />
         </a>
       </div>
