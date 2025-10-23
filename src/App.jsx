@@ -5,20 +5,22 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import useTheme from './hooks/useTheme';
+import useTheme from './hooks/useTheme'; // optional if you have it; harmless if present
+import Blog from './components/Blog';
 
 function App() {
-  // initialize theme (applies class to <html>)
-  useTheme(); // we don't need the toggle here; Navbar will use the hook itself
+  // initialize theme (safe to call even if you don't use it elsewhere)
+  try { useTheme(); } catch (e) {}
 
   return (
-    <div className="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-200">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-500">
       <Navbar />
-      <main>
+      <main className="pt-16"> {/* space for fixed navbar */}
         <Hero />
         <About />
         <Projects />
         <Contact />
+        <Blog />
       </main>
     </div>
   );
